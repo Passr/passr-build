@@ -1,0 +1,21 @@
+#cloud-config
+users:
+  - name: brady
+    groups: sudo
+    shell: /bin/bash
+    ssh-authorized-keys:
+      - ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCztsPFIpJwxavqnhYa5/0KuvCS6YqAf2JppVapmZjXvhmlpx9e8z7v687AbdbhoYdKRbpNVE/wQch3IhP41w/T+fcvOL2Is5fgEa20VWnahhomOv57WBsVlRu9wkFE4NVzwXZQztuAoy8NmSLdHrrgyjabp9hSiEYSk+613ryyR17iLWPNrMMXVjYAQgLoNU+ttAAdcf0DrDVSqxM7Q+/Af6wDnWFwHdmiCnBFH4hJauuHeBVqCwJOPtNngHatYS4qIyDBuairdR8mA0+wOzbeLvKJkljM4tvxg7pix5FUptDbH9GrvgASuBDROp48T7JtVgR6ocqLYQZn68gB6/3B brady@orion
+  - name: ant
+    groups: sudo
+    shell: /bin/bash
+    ssh-authorized-keys:
+      - ssh-rsa
+packages:
+  - golang
+  - postgresql
+  - emacs24-nox
+  - vim-basic
+  - git
+  - build-essential
+runcmd:
+  -
